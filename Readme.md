@@ -52,10 +52,9 @@ Duplicate product names exist because the same product may appear multiple times
 
 ---
 
-## 🔧 Project Workflow  
+🔧 Project Workflow
+1️⃣ Database & Table Creation
 
-### 1️⃣ Database & Table Creation  
-```sql
 CREATE TABLE zepto (
     sku_id SERIAL PRIMARY KEY,
     category VARCHAR(120),
@@ -69,10 +68,14 @@ CREATE TABLE zepto (
     quantity INTEGER
 );
 
+---
+
 2️⃣ Data Import
 Loaded CSV using MySQL Workbench
 Counted total number of records
 Viewed sample data to understand structure
+
+---
 
 3️⃣ 🔍 Exploratory Data Analysis (EDA)
 Checked for null values across columns
@@ -80,9 +83,13 @@ Identified distinct product categories
 Compared in-stock vs out-of-stock products
 Detected duplicate product entries (multiple SKUs)
 
+--- 
+
 4️⃣ 🧹 Data Cleaning
 Removed rows where MRP or discounted price was zero
 Converted pricing from paise → rupees
+
+---
 
 5️⃣ 📊 Business Insights
 Top 10 best-value products based on discount percentage
@@ -93,28 +100,3 @@ Top 5 categories with highest average discounts
 Price-per-gram analysis for value comparison
 Product grouping by weight (Low / Medium / Bulk)
 Total inventory weight per category
-
-🛠️ How to Use This Project
-git clone https://github.com/VaibhavGuptaNitj/zepto-SQL-data-analysis-project
-Open zepto_SQL_data_analysis.sql
-
-Create a database
-Run the SQL script
-Import the dataset
-
-Execute queries
-📁 Project Structure
-📦 zepto-SQL-data-analysis-project
- ┣ 📜 zepto_SQL_data_analysis.sql
- ┣ 📄 README.md
- ┗ 📊 dataset.csv
-
-💡 Key Learnings
-Real-world data cleaning using SQL
-Writing business-driven queries
-Handling messy e-commerce datasets
-Extracting actionable insights
-
-🔗 Repository
-
-https://github.com/VaibhavGuptaNitj/zepto-SQL-data-analysis-project
