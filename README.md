@@ -103,7 +103,7 @@ CREATE TABLE zepto (
 
 1. **Clone the repository**
    ```bash
-   git clone 
+   git clone https://github.com/VaibhavGuptaNitj/zepto-SQL-data-analysis-project
    ```
 2. **Open zepto_SQL_data_analysis.sql**
 
